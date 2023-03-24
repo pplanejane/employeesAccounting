@@ -24,7 +24,7 @@ class EmployeesAddForm extends Component {
                 name: '',
                 salary: ''
             });
-        } else if (this.state.name.replace(/ /g,"").length < 3) {
+        } else if (this.state.name.replace(/ /g,"").length <= 3) {
             alert("Please, enter a valid employee name");
             this.setState({
                 name: ''
